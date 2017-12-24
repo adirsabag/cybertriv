@@ -1,6 +1,7 @@
 <?php
 
-    $connection = mysqli_connect("localhost", "root", "", "cybertriv"); //The Blank string is the password
+    //$connection = mysqli_connect("localhost", "root", "", "cybertriv");
+    $connection = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
     mysqli_select_db($connection, 'users');
 
     $query = "SELECT * FROM users";
@@ -20,7 +21,7 @@
 		<li><a href="index.php">Sign Up</a></li>
 		<li><a href="sign-in.php">Login</a></li>
     <!--<li><a href="trivia.php">Trivia</a></li>-->
-    <li><a href="instructions.html">Instructions</a></li>
+    <!--<li><a href="instructions.html">Instructions</a></li>-->
 		<li><a href="daily-winner.php">Daily Table</a></li>
 		<li><a href="contacts.html">Contact</a></li>
 		<li><a href="about.html">About</a></li>

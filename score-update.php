@@ -2,7 +2,8 @@
     session_start();
     $id = $_SESSION['user'];
 
-    $link = mysqli_connect("localhost", "root", "", "cybertriv");
+    //$link = mysqli_connect("localhost", "root", "", "cybertriv");
+    $link = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
 
     $result = mysqli_query($link, "SELECT * FROM users WHERE id=$id");
     $row = mysqli_fetch_array($result);

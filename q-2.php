@@ -147,8 +147,8 @@
 	<ul>
         <li><a href="index.php">Sign Up</a></li>
         <li><a href="sign-in.php">Login</a></li>
-        <li><a href="trivia.php">Trivia</a></li>
-        <li><a href="instructions.html">Instructions</a></li>
+        <!--<li><a href="trivia.php">Trivia</a></li>-->
+        <!--<li><a href="instructions.html">Instructions</a></li>-->
 		<li><a href="daily-winner.php">Daily Table</a></li>
 		<li><a href="contacts.html">Contact</a></li>
         <li><a href="about.html">About</a></li>

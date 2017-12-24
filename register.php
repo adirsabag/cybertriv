@@ -1,5 +1,6 @@
 <?php
-    $link = mysqli_connect("localhost", "root", "", "cybertriv");
+   // $link = mysqli_connect("localhost", "root", "", "cybertriv");
+   $link = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
     if (mysqli_connect_error()){
         die ("There was an error connecting to the database");
     }
