@@ -12,7 +12,8 @@
 	<ul>
         <li><a href="index.php">Sign Up</a></li>
         <li><a href="sign-in.php">Login</a></li>
-        <!--<li><a href="trivia.php">Trivia</a></li>-->
+		<!--<li><a href="trivia.php">Trivia</a></li>-->
+		<li><a href="instructions.html">Instructions</a></li>
 		<li><a href="daily-winner.php">Daily Table</a></li>
 		<li><a href="contacts.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,7 +24,7 @@
 	<form name="form1" action="login.php" method="post">
 		<div align="center" class="container">
 			<label><b><font face="arial black" color="azure">ID</font></b></label><br>
-			<input type="text" placeholder="Enter first name" name="id_num" id="id_num" required>
+			<input type="text" placeholder="Enter ID" name="id_num" id="id_num" required>
 			<br>
 			<label><b><font face="arial black" color="azure">Password</font></b></label><br>
 			<input type="password" placeholder="Enter Password" name="psw" id="psw" required>

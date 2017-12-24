@@ -12,10 +12,13 @@
 
     $sql = "UPDATE users SET score=$score WHERE id=$id";
 
-    if (mysqli_query($link, $sql)) {
+   /*if (mysqli_query($link, $sql)) {
         echo "Record updated successfully";
 
     } else {
+        echo "Error updating record: " . mysqli_error($link);
+    }*/
+    if (!mysqli_query($link, $sql)) {
         echo "Error updating record: " . mysqli_error($link);
     }
 

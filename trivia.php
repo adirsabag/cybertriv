@@ -23,7 +23,8 @@
 	<ul>
         <li><a href="index.php">Sign Up</a></li>
         <li><a href="sign-in.php">Login</a></li>
-		<!--<li><a href="trivia.php">Trivia</a></li>-->
+        <!--<li><a href="trivia.php">Trivia</a></li>-->
+        <li><a href="instructions.html">Instructions</a></li>
 		<li><a href="daily-winner.php">Daily Table</a></li>
 		<li><a href="contacts.html">Contact</a></li>
 		<li><a href="about.html">About</a></li>
@@ -33,8 +34,9 @@
     </ul>
     <p><font size="5" face="arial" color="black">
         <br>
-        This is the trivia page
+        This is the trivia page, press continue to start the trivia. You can meanwhile take a short break.
         <br><br>
+        <button id="btn2" onclick="func()">Continue</button>
     </font></p>
    <p><?php echo("{$_SESSION['user']}"."<br />");?></p>
     <p>
@@ -52,6 +54,11 @@
             function scoreUpdate(){
                 location.href = 'score-update.php';
             }
+
+            function func(){
+                window.location.replace('q-1.php');
+            }
+
             </script>
 </body>
 </html>

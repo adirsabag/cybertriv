@@ -21,7 +21,7 @@
                 if ($row['id'] == $id and $row['password'] == $psw){ 
                     $_SESSION['user'] = $id;
                     $_SESSION['score'] = $row['score'];
-                    header('Location: trivia.php');
+                    header('Location: instructions.html');
                 }
                 else{
                     $flag = true;
