@@ -1,0 +1,136 @@
+body {
+    background-image: url("background3.jpg");
+    background-color: lightgray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(95, 158, 160);
+    /*background: linear-gradient(to right, rgba(1, 3, 129, 0.918), transparent);*/
+    background: linear-gradient(to right, rgba(66, 66, 66, 0.918), transparent);
+	font-family: arial;
+	font-size: 25px;
+    font-weight: bold;
+   /* border-radius: 25px;*/
+
+	/*position: fixed; //nav-bar always on top
+	top: 0;
+	width: 100%;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0, 182, 61);
+}
+
+.active {
+    background-color: darkslateblue;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    border-radius: 25px;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* style for all buttons */
+/*
+button {
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+*/
+#btn {
+  /*  border-radius: 25px;*/
+    background-color: darkslateblue;
+    color: white;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+
+/* Float signup button and add an equal width */
+.cancelbtn,.signupbtn {
+    float: center;
+    width: 20%;
+
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 81%;
+}
+
+th, td {
+    border: 0px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: rgba(255, 255, 255, 0.774)}
+tr:nth-child(odd){background-color: rgba(255, 255, 255, 0.774)}
+tr:hover {background-color: rgba(189, 161, 253, 0.699);}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+}
+
