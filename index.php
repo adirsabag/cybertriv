@@ -12,7 +12,7 @@
 <body>
 
 	<ul>
-		<li><a href="index.php">Sign Up</a></li>
+		<li><a href="index.php">Sign Up hello world</a></li>
 		<li><a href="sign-in.php">Login</a></li>
 		<!--<li><a href="trivia.php">Trivia</a></li>-->
 		<!--<li><a href="instructions.html">Instructions</a></li>-->
