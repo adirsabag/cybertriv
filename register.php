@@ -1,13 +1,13 @@
 <?php
-   // $link = mysqli_connect("localhost", "root", "", "cybertriv");
-   $link = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
+    $link = mysqli_connect("localhost", "root", "", "cybertriv");
+    //$link = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
     if (mysqli_connect_error()){
         die ("There was an error connecting to the database");
     }
 
     $id = $_POST['id_num'];
-    $f_name = $_POST['first_name'];
-    $l_name = $_POST['last_name'];
+    $f_name = ucfirst(strtolower($_POST['first_name']));
+    $l_name = ucfirst(strtolower($_POST['last_name']));
     $psw = $_POST['psw'];
     $psw_rpt = $_POST['psw_repeat'];
 

@@ -12,7 +12,7 @@
 	<ul>
         <li><a href="index.php">Sign Up</a></li>
         <li><a href="sign-in.php">Login</a></li>
-		<!--<li><a href="trivia.php">Trivia</a></li>-->
+		<li><a href="continue.php">Trivia</a></li>
 		<!--<li><a href="instructions.html">Instructions</a></li>-->
 		<li><a href="daily-winner.php">Daily Table</a></li>
 		<li><a href="contacts.html">Contact</a></li>
@@ -31,7 +31,7 @@
 			<br>
 
 			<div class="clearfix">
-				<button id="submit-btn" type="submit" class="signupbtn">Sign Up</button>
+				<button id="submit-btn" type="submit" class="signupbtn">Login</button>
 		  </div>
 		</div>
 	  </form>

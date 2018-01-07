@@ -1,7 +1,7 @@
 <?php
-
-    //$connection = mysqli_connect("localhost", "root", "", "cybertriv");
-    $connection = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
+    session_start();
+    $connection = mysqli_connect("localhost", "root", "", "cybertriv");
+    //$connection = mysqli_connect("sql211.epizy.com", "epiz_21296255", "dkgpXAxtN4FC", "epiz_21296255_cybertriv");
     mysqli_select_db($connection, 'users');
 
     $query = "SELECT * FROM users";
@@ -20,14 +20,18 @@
 	<ul>
 		<li><a href="index.php">Sign Up</a></li>
 		<li><a href="sign-in.php">Login</a></li>
-    <!--<li><a href="trivia.php">Trivia</a></li>-->
+    <li><a href="continue.php">Trivia</a></li>
     <!--<li><a href="instructions.html">Instructions</a></li>-->
 		<li><a href="daily-winner.php">Daily Table</a></li>
-		<li><a href="contacts.html">Contact</a></li>
-		<li><a href="about.html">About</a></li>
+		<li><a href="contacts.php">Contact</a></li>
+    <li><a href="about.php">About</a></li>
+    <li><a href="javascript: logout_func();">Logout</a></li>
 		<div id="logo">
 			<img src="logo.gif" align="right" height="55" width="" alt="">
-	   </div>
+     </div>
+     <div style="color: orange">
+			<li style="float: right;"><?php if (isset($_SESSION['user'])){ echo "Hello, "."{$_SESSION['first_name']}";} ?></li>
+        </div>
     </ul>
 <!--style= "background-color: #84ed86; color: #761a9b; margin: 0 auto;" -->
     <table id="myTable" border="0" align="center">
@@ -57,14 +61,20 @@
 
 <p>
     <div style="text-align:center;">
-        <button id="btn" onclick="sortByScore()">Sort by score</button>
+        <button id="btn" onclick="sortByID()">Sort by ID</button>
         <button id="btn" onclick="sortByFirstName()">Sort by first name</button>
         <button id="btn" onclick="sortByLastName()">Sort by last name</button>
-        <button id="btn" onclick="sortByID()">Sort by ID</button>
+        <button id="btn" onclick="sortByScore()">Sort by score</button>
         </div>
     </p>
 
 <script>
+    function logout_func(){
+        var con = confirm('By pressing OK, you will lose any progress you made in the trivia and will be redirected to the daily winner table.');
+        if (con == true){
+            window.location.replace('logout.php');
+        }
+    }
 function sortByScore() {
   var table, rows, switching, i, x, y, shouldSwitch;
   table = document.getElementById("myTable");
